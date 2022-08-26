@@ -88,9 +88,9 @@ background-color: #1c3761; cursor: pointer;
 border-radius: 5px;
 }
 
-.main_wrap{width: 1280px; margin : 0 auto; 
+.main_wrap{width: 1280px; margin : 0 auto; height : 500px;
 display : flex; align-items: center; justify-content: center;}
-.main_img{width: 1920px; height : 250px; margin : 0 auto; background-color: gray;}
+.c_main_img{width: 1920px; height : auto; margin : 0 auto;}
 .sign_container{ width : 1000px; height : 400px;
 	display: flex; justify-content: space-around; align-items : center;	
 }
@@ -111,10 +111,10 @@ align-items: center; justify-content: space-around;
 .signup{width : 480px; height : 400px; 
 display : flex; flex-direction: column ;
 justify-content: space-around; align-items: center;}
-.signup_ad h3{font-size : 30px; margin : 10px;}
+.signup_ad h3{font-size : 30px; margin : 10px; text-align: center;}
 .signup_ad p{font-size : 18px; margin : 10px;}
 .signup_btn{display : flex; justify-content: center;}
-.find_info h3{font-size : 30px; margin : 10px;}
+.find_info h3{font-size : 30px; margin : 10px; text-align: center;}
 .find_info p{font-size : 18px; margin : 10px;}
 .find_btn{height : 100px; display : flex; flex-direction: column;
 align-items: center; justify-content: space-around;}
