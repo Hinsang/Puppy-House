@@ -27,21 +27,24 @@ ul {
 section {
 	display: flex;
 }
-.main_inner:nth-child(1) {
-	width: 300px;
-	height: 1000px;
-	flex-grow: 1
+.main_map {
+	margin: 0 auto;
 }
-.main_inner:nth-child(2) {
-	width: 300px;
-	height: 1000px;
-	flex-grow: 2
-}
-.main_inner:nth-child(3) {
-	width: 300px;
-	height: 1000px;
-	flex-grow: 1
-}
+/* .main_inner:nth-child(1) { */
+/* 	width: 300px; */
+/* 	height: 1000px; */
+/* 	flex-grow: 1 */
+/* } */
+/* .main_inner:nth-child(2) { */
+/* 	width: 300px; */
+/* 	height: 1000px; */
+/* 	flex-grow: 2 */
+/* } */
+/* .main_inner:nth-child(3) { */
+/* 	width: 300px; */
+/* 	height: 1000px; */
+/* 	flex-grow: 1 */
+/* } */
 
 
 
