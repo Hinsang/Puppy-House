@@ -20,12 +20,12 @@
 
 	<ul style="list-style-type: none;">
 		<li><h4>지웅</h4></li>
-	
-	  	<li>8.26 : 로그인 / 회원가입 html 및 css 작성 / 1차 작성 완 // <strong>종료</strong></li>
-	 	<li> -8.27 : 회원가입(sign_up) js 작성 시작 // 진행중 
+		
+	  	8.26 : 로그인 / 회원가입 html 및 css 작성 / 1차 작성 완 // 종료
+	 	8.27 : 회원가입(sign_up) js 작성 시작 // 진행중 
 	          ㄴ개인정보 활용동의 페이지 작성 <br>
-	          ㄴID와 Password 저장 공간(sign_in과 공통으로 사용) 생성 후 ID input의 값을 중복 검사 <br>
-	          ㄴ비밀번호/비밀번호 확인 input의 유효성 검사 추가  <br>
-	          ㄴEmail input의 value 형식에 유효성 검사 추가 <br>
-	    </li>
+	          ㄴID와 Password 저장 공간(sign_in과 공통으로 사용) 생성 후 ID input의 값을 중복 검사 
+	          ㄴ비밀번호/비밀번호 확인 input의 유효성 검사 추가 
+	          ㄴEmail input의 value 형식에 유효성 검사 추가
+	 
  	</ul>
