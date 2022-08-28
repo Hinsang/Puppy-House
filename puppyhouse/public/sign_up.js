@@ -10,6 +10,12 @@
  const pwtp = document.querySelector('#pwtp')
  const email_input = document.querySelector('#email_input')
  const email_checked = document.querySelector('#email_output')
+ const btn_p = document.querySelector('#btn_p')
+ const name_input = document.querySelector('#name_input')
+ 
+ const submit_box = {}
+ console.log(submit_box)
+ 
 
  
  
@@ -36,6 +42,7 @@ function email_test(){
 				if(domain_box.indexOf(dot_cutter[1]) >= 0){
 					email_checked.style.color = 'green'
 					email_checked.textContent = '이메일 형식입니다.'
+					return true
 				}else{//삭제대상
 					email_checked.style.color = 'red'
 					email_checked.textContent = '이메일 형식이 아닙니다.'			
@@ -44,6 +51,7 @@ function email_test(){
 			if(domain_box2.indexOf(dot_cutter[1]) >= 0 && domain_box.indexOf(dot_cutter[2]) >= 0 ){
 				email_checked.style.color = 'green'
 				email_checked.textContent = '이메일 형식입니다.'
+				return true
 			}else{//삭제대상
 				email_checked.style.color = 'red'
 				email_checked.textContent = '이메일 형식이 아닙니다.'			
@@ -60,7 +68,6 @@ function email_test(){
 
 
 id_info.addEventListener('keyup', ()=> {
-	console.log(id_info.value.length)
 	idlength_test()
 })
 
@@ -98,6 +105,7 @@ function pwlength_test(){
 		pwp.textContent = '비밀번호가 너무 짧아요!'
 	}else{
 		pwp.textContent =''
+		return true
 	}
 }
 
@@ -114,8 +122,20 @@ function repeatPw_test(){
 }
 
 
-
-
+function submit_info(){
+	if(idlength_test()==true && pwlength_test()==true && repeatPw_test()==true && email_test()==true){
+		submit_box.userID = id_info.value
+		submit_box.name = name_input.value
+		submit_box.pw = pw_info.value
+		submit_box.email = email_input.value
+	}else{
+		btn_p.style.color = 'red'
+		btn_p.textContent = '입력 정보를 확인해주세요.'
+		return
+	}
+	 localStorage.setItem(id_info.value, submit_box)
+	 console.log(localStorage)
+}
 
 
 

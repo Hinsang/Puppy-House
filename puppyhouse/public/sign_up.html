@@ -59,7 +59,7 @@
 				<div class="info_box">
 					<div>
 						<h3>이름</h3>
-						<input type="text">
+						<input id="name_input" type="text">
 					</div>
 					<div id="birth_box">
 						<h3>생년월일</h3>
@@ -98,7 +98,8 @@
 					</div>
 				</div>
 				<div class="btn_box">
-					<button><span>회원가입</span></button>
+					<button onclick="submit_info()"><span>회원가입</span></button>
+					<p id="btn_p"></p>
 				</div>
 			</div>			
 		</div><!-- contaeinr -->
@@ -107,7 +108,7 @@
 			<div class="footer">
 				<ul class="top_footer">
 					<li>BMSMILE Co., Ltd.</li>
-					<li>Tel.1644-9603 |</li> 
+					<li>Tel.1644-9603 |</li>
 					<li>Email : contact@bmsmile.com |</li> 
 				</ul><!-- top_footer -->
 				<ul class="booter_footer">
