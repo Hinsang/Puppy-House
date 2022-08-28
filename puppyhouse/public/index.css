@@ -34,8 +34,7 @@ a{
     
     display: flex;
     align-items: center;
-    justify-content: space-between;	
-    
+    justify-content: space-between;
 }
 .header a{
 	color:#fff;
@@ -75,6 +74,9 @@ a{
     background: #fff;
 }
 	
+
+/*section*/
+
 
 /*footer section*/
 .footer_wrap{
