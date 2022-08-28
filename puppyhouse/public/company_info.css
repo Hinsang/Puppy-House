@@ -19,7 +19,7 @@
 
 /* ---- main start ---- */
 
-.content_box{
+.container{
 	margin-top: 100px;
 	margin-bottom: 100px;
 }
@@ -33,7 +33,9 @@ main{
 
 main .main_bg_img{
 	height: 350px;
-	background-image: url("images/main_bg_img.jpg")
+	background-image: url("images/company_info_main_bg_img.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 
@@ -41,8 +43,7 @@ main .main_bg_img{
 	color: #ffffff;
 	text-align: center;
 	font-size: 50px;
-	font-family: Pretendard-Bold;
-	
+	font-family: Pretendard-Regular;
 	margin-top: 50px;
 }
 
@@ -50,9 +51,8 @@ main .main_bg_img{
 	color: #ffffff;
 	text-align: center;
 	font-size: 27px;
-	font-family: Pretendard;
+	font-family: Pretendard-Regular;
 	font-weight: 100;
-	
 	margin-top: 10px;
 }
 
@@ -63,23 +63,108 @@ main .main_bg_img{
 
 
 
-/* ---- article start ---- */
+
+
+/* ---- center_line start ---- */
+
+.center_line{
+	margin: 0 auto;
+}
+
+.dot_line{
+	width: 40px;
+	height: 40px;
+	background-image:url("images/dot_ffc303_03.png");
+	position: absolute;
+	left: 625px;
+	top: 48px;
+	background-repeat: no-repeat;
+}
+
+
+.dot_ffc303{
+	left: 633px;
+	position: absolute;
+}
+
+.dot_bg_01{
+	position: absolute;
+	top: 55px;
+	width: 15px;
+	height: 15px;
+	background: #ffc303;
+	border-radius: 50%;
+
+
+}
+
+.dot_bg_02{
+	position: absolute;
+	top: 400px;
+	width: 15px;
+	height: 15px;
+	background: #ffc303;
+	border-radius: 50%;
+
+}
+
+.dot_bg_03{
+	position: absolute;
+	top: 1010px;
+	width: 15px;
+	height: 15px;
+	background: #ffc303;
+	border-radius: 50%;
+
+}
+
+.dot_bg_04{
+	position: absolute;
+	top: 1530px;
+	width: 15px;
+	height: 15px;
+	background: #ffc303;
+	border-radius: 50%;
+
+}
+
+.dot_bg_05{
+	position: absolute;
+	top: 2080px;
+	width: 15px;
+	height: 15px;
+	background: #ffc303;
+	border-radius: 50%;
+
+}
 
 
 article{
 	width: 1280px;
 	margin: 0 auto;
-	background: #ffeaea;
-
+	height: 3000px;
+	background: aqua;
 }
 
 
+
+
+/* ---- container start ---- */
+
+.container{
+	background-image: url("images/dot_575757.png");
+	background-repeat: repeat-y;
+	background-position: center;
+	height: 2080px;
+	position: relative;
+}
 
 
 /* ---- left_content start ---- */
 
 .left_content{
 	float: left;
+	margin-top: 10px;
 }
 
 
@@ -95,7 +180,7 @@ article{
 
 .left_ct_2022, .left_ct_2020, .left_ct_2018{
 	width: 600px;
-	height: 500px;
+	height: 650px;
 	border: 1px solid green;
 	text-align: right;
 }
@@ -142,7 +227,7 @@ article{
 	clear: both;
 	width: 600px;
 	height: 300px;
-	padding-top: 20px;
+	padding-top: 35px;
 	padding-right: 30px;
 }
 
@@ -150,39 +235,14 @@ article{
 	float: right;
 	width: 500px;
 	height: 270px;
-	
 	background-color: #8080ff;
+	background-image: url("images/company_info_sub_img_01.jpg");
+	background-position: center;
+	background-size: 600px;
 }
-
 
 
 /* ---- left_content end ---- */
-
-
-
-
-
-
-
-
-/* ---- center start ---- */
-
-
-.center_line{
-	width: 640px;
-	border-right: 3px solid red;
-	z-index: 100;
-}
-
-
-
-
-
-
-/* ---- center end ---- */
-
-
-
 
 
 
@@ -201,7 +261,7 @@ article{
 
 .right_ct_2021, .right_ct_2020{
 	width: 600px;
-	height: 500px;
+	height: 650px;
 	border: 1px solid green;
 	text-align: left;
 }
@@ -258,7 +318,7 @@ article{
 	clear: both;
 	width: 600px;
 	height: 300px;
-	padding-top: 20px;
+	padding-top: 35px;
 	padding-left: 30px;
 	
 }
@@ -266,17 +326,25 @@ article{
 .right_img{
 	width: 500px;
 	height: 270px;
-	
 	background-color: #8080ff;
+	background-image: url("images/company_info_sub_img_02.png");
+	background-position: center;
+	background-size: 550px;
 }
 
+.right_img2{
+	width: 500px;
+	height: 270px;
+	background-color: #8080ff;
+	background-image: url("images/company_info_sub_img_03.jpg");
+	background-position: center;
+	background-size: 600px;
+}
 
 /* ---- right_content end ---- */
 
 
 
-
-
-/* ---- article end ---- */
+/* ---- container end ---- */
 
 
