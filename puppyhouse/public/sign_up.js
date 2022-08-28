@@ -76,7 +76,6 @@ repeatPw.addEventListener('change', ()=>{
 //2. id유효성 검사 - 정규표현식x 단순 길이로만 체크
 
 function idlength_test(){
-	
 	if(id_info.value.length==0){
 		idp.textContent =''
 	}else if(id_info.value.length<5){
@@ -91,8 +90,7 @@ function idlength_test(){
 
 //3. pw유효성 검사 - 정규표현식x 단순 길이 + 비밀번호 확인까지만 체크
 
-function pwlength_test(){
-	
+function pwlength_test(){	
 	if(pw_info.value.length==0){
 		pwp.textContent =''
 	}else if(pw_info.value.length<8){
