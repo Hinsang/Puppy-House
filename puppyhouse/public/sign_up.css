@@ -90,7 +90,7 @@ a{
 .sexuality select{width : 480px; height : 40px;}
 .btn_box{margin-top:20px; margin-bottom:30px;}
 .btn_box span{color:white; font-size : 15px; font-weight: bold;}
-.btn_box button{ width : 480px; height : 40px; 
+.btn_box button{ width : 480px; height : 40px; cursor : pointer;
 border-style : none; background-color: #1c3761;}
 
 /*footer section*/
