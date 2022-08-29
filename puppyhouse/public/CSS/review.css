@@ -33,7 +33,7 @@ main{
 
 main .main_bg_img{
 	height: 350px;
-	background-image: url("images/company_info_main_bg_img.jpg");
+	background-image: url("../images/company_info_main_bg_img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 }

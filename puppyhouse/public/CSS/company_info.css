@@ -33,7 +33,7 @@ main{
 
 main .main_bg_img{
 	height: 350px;
-	background-image: url("images/company_info_main_bg_img.jpg");
+	background-image: url("../images/company_info_main_bg_img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@ main .main_bg_img{
 .dot_line{
 	width: 40px;
 	height: 40px;
-	background-image:url("images/dot_ffc303_03.png");
+	background-image:url("../images/dot_ffc303_03.png");
 	position: absolute;
 	left: 625px;
 	top: 48px;
@@ -152,7 +152,7 @@ article{
 /* ---- container start ---- */
 
 .container{
-	background-image: url("images/dot_575757.png");
+	background-image: url("../images/dot_575757.png");
 	background-repeat: repeat-y;
 	background-position: center;
 	height: 2080px;
@@ -236,7 +236,7 @@ article{
 	width: 500px;
 	height: 270px;
 	background-color: #8080ff;
-	background-image: url("images/company_info_sub_img_01.jpg");
+	background-image: url("../images/company_info_sub_img_01.jpg");
 	background-position: center;
 	background-size: 600px;
 }
@@ -327,7 +327,7 @@ article{
 	width: 500px;
 	height: 270px;
 	background-color: #8080ff;
-	background-image: url("images/company_info_sub_img_02.png");
+	background-image: url("../images/company_info_sub_img_02.png");
 	background-position: center;
 	background-size: 550px;
 }
@@ -336,7 +336,7 @@ article{
 	width: 500px;
 	height: 270px;
 	background-color: #8080ff;
-	background-image: url("images/company_info_sub_img_03.jpg");
+	background-image: url("../images/company_info_sub_img_03.jpg");
 	background-position: center;
 	background-size: 600px;
 }
