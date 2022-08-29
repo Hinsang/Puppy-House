@@ -15,9 +15,7 @@ a{
 }
 
 /*wrap*/
-
 .wrap{
-<<<<<<< HEAD
 	width:1920px;
 	margin:0 auto;
 	
@@ -73,10 +71,6 @@ a{
 	margin:0 auto;
 	height: 100vh;
     background: #fff;
-}
-=======
-	/* width:1920px; */
-	margin:0 auto;
 	
 }
 
@@ -136,7 +130,6 @@ a{
     background: #fff;
 }
 	
->>>>>>> refs/remotes/origin/Shin
 
 /*footer section*/
 .footer_wrap{
