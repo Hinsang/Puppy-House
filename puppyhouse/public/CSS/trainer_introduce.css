@@ -33,7 +33,7 @@ main{
 
 main .main_bg_img{
 	height: 350px;
-	background-image: url("images/company_info_main_bg_img.jpg");
+	background-image: url("../images/company_info_main_bg_img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -134,7 +134,7 @@ article{
 	height: 550px;
 	background: #ffffff;
 	border-radius: 50%;
-	background-image: url("images/trainer_img_03.jpg");
+	background-image: url("../images/trainer_img_03.jpg");
 	background-size: 550px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -256,7 +256,7 @@ article{
 	height: 550px;
 	background: #eceee8;
 	border-radius: 50%;
-	background-image: url("images/trainer_img_02.jpg");
+	background-image: url("../images/trainer_img_02.jpg");
 	background-position: center;
 	background-size: 850px;
 	background-repeat: no-repeat;
@@ -351,7 +351,7 @@ article{
 	height: 550px;
 	background: #ffffff;
 	border-radius: 50%;
-	background-image: url("images/trainer_img_09.png");
+	background-image: url("../images/trainer_img_09.png");
 	background-size: 750px;
 	background-position: center;
 	background-repeat: no-repeat;

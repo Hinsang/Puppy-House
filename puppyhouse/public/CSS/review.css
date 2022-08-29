@@ -33,7 +33,7 @@ main{
 
 main .main_bg_img{
 	height: 350px;
-	background-image: url("images/company_info_main_bg_img.jpg");
+	background-image: url("../images/company_info_main_bg_img.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -234,11 +234,12 @@ form .input_box:nth-child(7) {
 
 /* 텍스트 */ 
 
-.review_get{
+#review_get{
 	clear: both;
 	margin: 0 auto;
 	padding-top: 10px;
 	height: 1000px;
+	background: pink;
 	
 }
 
