@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>댕댕이유치원 예약안내</title>
-<link rel="stylesheet" href="reservation.css">
+<link rel="stylesheet" href="../CSS/reservation.css">
 </head>
 <body>
 	<div class="wrap">
@@ -131,7 +131,7 @@
 						
 						
 						<div class="input_div dog_action_file_section">
-							<span class="span_text">문제행동을 첨부파일로 보내주세요(jpg,png,mp4,avi)</span>
+							<span class="span_text">문제행동을 첨부파일로 보내주세요.(jpg,png,mp4,avi)</span>
 							<div class="input_box">
 							<div class="file_box">
 								<input type="file" class="input_file">
@@ -143,20 +143,26 @@
 						<div class="input_div dog_adoption_section">
 							<span class="span_text">반려견의 입양출처</span>
 							<div class="input_box">
-<!-- 								<input type="radio" name="adoption" class="radio">펫샵 -->
+								<input type="radio" name="adoption" class="radio">펫샵 
 								<input type="radio" name="adoption" class="radio">지인
 								<input type="radio" name="adoption" class="radio">유기견센터
 								<input type="radio" name="adoption" class="radio">기타					
 							</div><!-- input_box -->					
 						</div><!-- input_div -->	
 						
-										
-					</div><!-- dog_section -->			
+						
+						<div class="input_div dog_house_section">
+							<span class="span_text">반려견의 주거환경</span>
+							<div class="input_box">
+								<input type="radio" name="house" class="radio">단독주택 
+								<input type="radio" name="house" class="radio">다세대주택
+								<input type="radio" name="house" class="radio">기타												
+							</div><!-- input_box -->					
+						</div><!-- input_div -->	
+																
+					</div><!-- dog_section -->
 					
-					<div class="agree">
-						<input type="checkbox" name="check"> 
-						<span class="agree_span"> 개인정보 취급방침 (동의)</span>
-					</div><!-- agree -->
+					
 					
 					<div class="btn">
 						<button class="send">제출하기</button>				

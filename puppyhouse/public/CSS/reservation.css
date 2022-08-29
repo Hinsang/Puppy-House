@@ -142,7 +142,7 @@ a{
 /*dog section*/
 
 .dog_section{
-	margin-top:70px;
+	margin-top:80px;
 }
 .dog_section h4{}
 .file_box{
@@ -151,12 +151,10 @@ a{
     border: 1px solid;
 }
 .input_file{}
-.agree{
-	margin:30px 0;
-}
+
 
 .btn{
-	margin-bottom: 20px;
+	margin:30px 0;
 }
 .send{
 	width:140px;
