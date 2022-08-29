@@ -79,12 +79,12 @@ article{
 /* ---- container start ---- */
 
 .container{
-	background-image: url("../images/dot_575757.png");
+	background-image: url("../images/dot_bar_bg.png");
 	background-repeat: repeat-y;
 	background-position: center;
 	height: 2090px;
 	position: relative;
-	border: 1px solid red;
+
 }
 
 
@@ -184,8 +184,8 @@ article{
 
 .dot_bar{
 	width: 1px;
-	height: 10%;
-	left: 50%;
+	height: 60px;
+	left: 639px;
 	background: #ffc303;
 	position: absolute;
 	
@@ -202,6 +202,64 @@ article{
 	top: 43px;
 	background-repeat: no-repeat;
 }
+
+
+.dot_line2{					/* 동그라미 라인 */
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffc303;
+	border-radius: 50%;
+	position: absolute;
+	left: 48.4%;
+	top: 387px;
+	background-repeat: no-repeat;
+}
+
+
+.dot_line3{					/* 동그라미 라인 */
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffc303;
+	border-radius: 50%;
+	position: absolute;
+	left: 48.4%;
+	top: 997px;
+	background-repeat: no-repeat;
+}
+
+
+.dot_line4{					/* 동그라미 라인 */
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffc303;
+	border-radius: 50%;
+	position: absolute;
+	left: 48.4%;
+	top: 1517px;
+	background-repeat: no-repeat;
+}
+
+
+.dot_line5{					/* 동그라미 라인 */
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffc303;
+	border-radius: 50%;
+	position: absolute;
+	left: 48.4%;
+	top: 2067px;
+	background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .dot_ffc303{

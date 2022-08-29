@@ -54,10 +54,11 @@ function 리뷰입력(){
 }
 
 
-	// 등록 버튼을 눌렀을때 출력될 틀	
+	 
 function 리뷰등록(){
-
-	let get = 
+	
+		// 등록 버튼을 눌렀을때 출력될 틀	
+	let get =
 			'<div class="review_get_box">'+
 				'<div class="review_text">'+
 					'<div class="text_01">'+
@@ -75,6 +76,7 @@ function 리뷰등록(){
 					'<div class="get_img">'+ '</div>'+
 				'</div>'+	
 			'</div>'
+	
 
 		// 리뷰 리스트의 랭스 길이까지 1개씩증가
 	for(let i = 0; i < reviewlist.length; i++){
@@ -102,10 +104,8 @@ function 리뷰등록(){
 
 	
 		alert('등록..됐니..?')
-		console.log(리뷰등록)
 	}
-	
-	document.getElementById('review_get').innerHTML = get
+		document.getElementById('review_get').innerHTML = get
 }
 	
 	
