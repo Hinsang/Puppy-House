@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
+	
 	<div class="wrap">
 		<div class="header_wrap">
 			<div class="header">
@@ -18,11 +19,6 @@
 						<li><a href="sign_in.html">로그인</a></li>
 						<li><a href="sign_up.html"
 						>회원가입하기</a></li>
-					</ul>
-				
-					<ul class="gnb">
-						<li><a href="sign_in.html">로그인</a></li>
-						<li><a href="sign_up.html">회원가입</a></li>
 					</ul>
 					<ul class="gnb">
 						<li><a href="company_info.html">소개합니다</a></li>
@@ -40,70 +36,34 @@
 			<div class="table_flex">
 				<div class="table_line">
 					<div class="table_menu">
-						<h2>일정 </h2><h3>을 확인하세요.</h3>
-						<h1>◀ 2021.09 ▶</h1>
+						<h2 style="color: blue;">일정 </h2><h3>을 확인하세요.</h3>
+						<h1><button onclick="changeMonth(-1)">◀</button>
+							<span>
+								<span id="year"></span>년
+								<span id="month"></span>월
+							</span>
+						<button onclick="changeMonth(1)">▶</button></h1>
 					</div>
-					<table>
-						<tr id="table_head">
-							<th class="sunday">Sun</td>
-							<th>Mon</th>
-							<th>Tue</th>
-							<th>Wed</th>
-							<th>Thu</th>
-							<th>Fri</th>
-							<th>Sat</th>
-						</tr>
+					<table class="table table-bordered">
+						<thead>
+							<tr id="table_head">
+								<th class="sunday">Sun</td>
+								<th>Mon</th>
+								<th>Tue</th>
+								<th>Wed</th>
+								<th>Thu</th>
+								<th>Fri</th>
+								<th>Sat</th>
+							</tr>
+						</thead>
 						
-						<tr>
-							<td class="sunday"><span>29</span></td>
-							<td><span>30</span></td>
-							<td><span>31</span></td>
-							<td><span>1</span></td>
-							<td><span>2</span></td>
-							<td><span>3</span></td>
-							<td><span>4</span></td>
-						</tr>
-						<tr>
-							<td class="sunday"><span>5</td>
-							<td><span>6</span></td>
-							<td><span>7</span></td>
-							<td><span>8</span></td>
-							<td><span>9</span></td>
-							<td><span>10</span></td>
-							<td><span>11</span></td>
-						</tr>
-						<tr>
-							<td class="sunday"><span>12</td>
-							<td><span>13</span></td>
-							<td><span>14</span></td>
-							<td><span>15</span></td>
-							<td><span>16</span></td>
-							<td><span>17</span></td>
-							<td><span>18</span></td>
-						</tr>
-						<tr>
-							<td class="sunday"><span>19</span></td>
-							<td><span>20</span></td>
-							<td><span>21</span></td>
-							<td><span>22</span></td>
-							<td><span>23</span></td>
-							<td><span>24</span></td>
-							<td><span>25</span></td>
-						</tr>
-						<tr>
-							<td class="sunday"><span>26<span></td>
-							<td><span>27<span></td>
-							<td><span>28<span></td>
-							<td><span>29<span></td>
-							<td><span>30<span></td>
-							<td></td>
-							<td></td>
-						</tr>
+						<tbody id="tb_body"></tbody>
 					</table>
 				</div>
 				<p>일정 : ㅁㅁㅁ</p>
 			</div>
 		</div>
+			</div>
 		</div><!-- contaeinr -->
 		
 		<div class="footer_wrap">		
@@ -122,5 +82,9 @@
 			</div><!-- footer -->
 		</div><!-- footer_wrap -->		
 	</div><!-- wrap -->
+	
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="../JS/일정.js" type="text/javascript"></script>
+	
 </body>
 </html>

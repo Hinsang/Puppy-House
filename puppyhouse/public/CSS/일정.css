@@ -9,6 +9,10 @@ li {
 	list-style-type: none;
 }
 
+tr td:nth-child(1){
+	color: red;
+}
+
 /* 헤더 */
 
 #header {
