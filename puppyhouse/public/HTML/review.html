@@ -63,13 +63,13 @@
 				<input class="post_pw" type="password" placeholder="비밀번호">
 			</div>
 
-			<div class="input_box">	
-				<input class="star" type="radio" name="star"> ★★★★★
-				<input class="star" type="radio" name="star"> ★★★★☆
-				<input class="star" type="radio" name="star"> ★★★☆☆
-				<input class="star" type="radio" name="star"> ★★☆☆☆
-				<input class="star" type="radio" name="star"> ★☆☆☆☆
-			</div>
+         <div class="input_box">   
+            <input class="star" type="radio" name="star" value="★★★★★"> <span>★★★★★</span>
+            <input class="star" type="radio" name="star" value="★★★★☆"> <span>★★★★☆</span>
+            <input class="star" type="radio" name="star" value="★★★☆☆"> <span>★★★☆☆</span>
+            <input class="star" type="radio" name="star" value="★★☆☆☆"> <span>★★☆☆☆</span>
+            <input class="star" type="radio" name="star" value="★☆☆☆☆"> <span>★☆☆☆☆</span>
+         </div>
 
 			<div class="input_box">
 				<input class="post_title" type="text" placeholder="제목입력">
@@ -83,26 +83,30 @@
 				<input class="post_img" type="file" accept=".jpg, .png, .gif">
 			</div>
 			
-			<div class="but_box">
-				<div class="input_but">
-					<div class="submit">
-						<input type="submit" value="등록" onclick="리뷰입력()">
-					</div>
-					<div class="reset">
-						<input type="reset" value="다시입력">
-					</div>	
+			
+		<div class="btn_box">
+			<div class="input_btn">
+				<div class="submit">
+					<button type="button" onclick="리뷰입력()">등록</button>
+				</div>
+				
+				<div class="reset">
+					<input type="reset" value="다시입력">
 				</div>	
 			</div>	
+		</div>
 			
 			
 		</form>
+		
+		
 		
 	</div>
 		
 		
 		<div id="review_get">
 		
-		<!-- 
+			<!-- 
 			<div class="review_get_box">
 				<div class="review_text">
 					<div class="text_01">
@@ -124,8 +128,8 @@
 					<div class="get_img"> </div>
 				</div>	
 			</div>
-		 -->
 		 
+		  -->
 		</div>
 		
 		

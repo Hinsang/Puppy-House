@@ -10,7 +10,12 @@ window.addEventListener('scroll', () => {
 	
 	let height = window.scrollY
 	// 함수 밖에서 선언할 경우 콘솔창에 계속 0으로 떠서 안에서 선언
-	
+		
+			if(Number( dot_bar.style.height.split('p')[0] ) > 2050){
+				
+				dot_bar.style.height=2050
+				return
+			}
 	
 	console.log( height )
 	// 선언한 변수가 제대로 나오는지 확인
@@ -19,10 +24,11 @@ window.addEventListener('scroll', () => {
 		function scroll_move(){
 			// 변수 height에 따라 움직일 새로운 함수 선언
 			// 함수 밖에 선언 시 height가 정의되지 않은 상태기 때문에 실행이 안됨
-		
+
 			dot_bar.style.height = height + 100 + 'px'
 			// 초기 px 값인 210에서 height를 더한 후 px로 입력
 			// Math.ceil((scroll / scrollable) * 100)
+			
 		}
 		
 		scroll_move()

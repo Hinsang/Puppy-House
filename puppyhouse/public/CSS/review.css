@@ -93,7 +93,6 @@ article{
 	color: #1c3761;
     text-align: center;
     letter-spacing: -1.5px;
-	
 }
 
 
@@ -182,17 +181,16 @@ form textarea{
 
 form .input_box:nth-child(7) {
 	height: 70px;
-
 }
 
 
-.but_box{
+.btn_box{
 	clear: both;
 	margin: 0 auto;
 	padding-left: 150px;
 }
 
-.input_but{
+.input_btn{
 	height: 80px;
 	width: 410px;
 	margin: 0 auto;
@@ -227,7 +225,10 @@ form .input_box:nth-child(7) {
 }
 
 
-
+input[type='text']::placeholder,
+input[type='password']::placeholder{
+	color: #d5d5d5;
+}
 
 
 /* 등록 리뷰 출력 */
@@ -236,10 +237,9 @@ form .input_box:nth-child(7) {
 
 #review_get{
 	clear: both;
-	margin: 0 auto;
-	padding-top: 10px;
+	margin: 20px auto;
+	padding-top: 30px;
 	height: 1000px;
-
 	
 }
 
@@ -247,7 +247,7 @@ form .input_box:nth-child(7) {
 .review_get_box{
 	width: 1000px;
 	height: 250px;
-	margin: 0 auto;
+	margin: 20px auto;
 	border-radius: 20px;
 	box-shadow: 1px 2px 5px #bbb;
 	
@@ -285,8 +285,8 @@ form .input_box:nth-child(7) {
 	font-family: Pretendard-Regular;
 	font-weight: 500px;
 	color: #fff;
-	padding-left: 18px;
-	padding-top: 6px;
+	padding-left: 13px;
+	padding-top: 5px;
 }
 
 
@@ -342,5 +342,12 @@ form .input_box:nth-child(7) {
 	margin-right: 25px;
 	margin-top: 25px
 }
+
+
+
+
+
+
+
 
 
