@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";@charset "UTF-8";
 
 *{
 	margin:0;
@@ -13,8 +13,6 @@ a{
 	text-decoration: none;
 	color: #000;
 }
-
-/*font*/
 @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -24,29 +22,29 @@ a{
 /*wrap*/
 
 .wrap{
-	width:1920px;
-	margin:0 auto;
-	
+	/* width:1920px; */
+	margin:0 auto;	
 }
 
 /*header section*/
 .header_wrap{
 	width: 100%;
+	height:90px;
 	background: #1c3761; 	
 }
 .header{
 	width: 1280px;
 	height: 80px;
-    margin: 0 auto;    
-    
+    margin: 0 auto;      
     display: flex;
     align-items: center;
-    justify-content: space-between;	
-    
+    justify-content: space-between;	    
 }
+
 .header a{
 	color:#fff;
 }
+
 .left_section{}
 .logo_section{
 	width: 200px;
@@ -63,6 +61,8 @@ a{
 	display:flex;
 	justify-content: flex-end;
 	font-size: 14px;
+	margin-top: 8px;
+    font-weight: bold;
 }
 .lognin_section li{
 	margin:0 10px;
@@ -72,12 +72,21 @@ a{
 }
 .gnb li{
 	margin:0 10px;
+	font-size: 17px;
 }
+
 
 .contaeinr{
 	width:100%;
-	height:561px;
+	
 	margin:0 auto;
+}
+.contaeinr_img_section{
+	width:100%;
+	height:48vh;
+	background:url("../images/main_2.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 
 .container_box{
@@ -90,21 +99,28 @@ a{
     justify-content: center;
 }
 
-.text_box{	
-    height: 150px;
-    display: flex;
-    flex-direction: column;
+.text_section{
+	width:100%;
+	height:150px;
+	display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid #000;
-    margin-top:30px;
+    flex-direction: column;
+	color: #fff;
+	position: absolute;
+    top: 150px;
 }
 
-.text_box h2{
-	padding:15px 0;
-}
-.text_box span{}
+.av_title{
+	font-size: 50px;
+	letter-spacing: 10px;
+}	
 
+.ab_sub_text{
+	font-size: 20px;
+	margin:10px 0;
+	etter-spacing: 3px;
+}
 .advice_box{
 	
 }
