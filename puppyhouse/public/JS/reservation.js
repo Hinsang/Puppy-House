@@ -13,6 +13,7 @@
  
  let 신청자리스트 =[]
  //상담리스트
+ //함수
  function 제출하기(){
 	/*
 	let name = document.querySelector('.name')
@@ -22,34 +23,46 @@
 	let email = document.querySelector('.email')	
 	console.log(email_select)	
 	*/
+	//html 안에있는 모든 input소환
 	let input = document.querySelectorAll('input')
+	//핸드폰번호를 저장할 변수지정
 	let phone = document.querySelectorAll('.phone_box')
-	let select = document.querySelectorAll('select')	
+	//html 안에있는 모든 select소환
+	let select = document.querySelectorAll('select').value
+	//html 안에있는 모든 option 소환	
+	let options = document.querySelectorAll('option')
+	let radio = document.querySelectorAll('.radio')
+	let checkbox = document.querySelectorAll('.checkbox')
 	
+	console.log(select)
+	console.log(radio)
+	console.log(checkbox)
 	
 	//객체에 담기
+	
 	let 신청자={
 		이름:input[0].value,
-		전화번호:input[1].value,
-		
-		
+		//앞번호와 뒷번호는 소환이 되는데 왜 010은 소환이 안되는 이유 좀
+		전화번호:select[0]+input[1].value+input[2].value,		
 		이메일:input[3].value,
 		반려견이름:input[4].value,
 		반려견나이:input[5].value,
-		견종:input[6].value
+		견종:input[6].value,
+		중성화여부:radio.value,
 		
-		/*	
-		중성화여부:input[],	
-		중성화여부:,
+			/*
+		
+	
 		문제행동:,
 		첨부파일:,
 		입양출처:,
 		주거환경:,
 		*/
+		
 	}
-	console.log(input[7])
+	
 	console.log(신청자)
 	
-	
 }
+
 제출하기()
