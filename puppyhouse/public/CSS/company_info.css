@@ -126,6 +126,7 @@ main .main_bg_img{
 	height:48vh;
 	background-image: url("../images/company_info_main_bg_img.jpg");
 	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
