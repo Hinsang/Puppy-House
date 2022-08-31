@@ -243,7 +243,7 @@ h3 {
 }
 .footer_image {
 	width: 50%;
-	background-image: url("./images/dog_together.jpg");
+	background-image: url("../images/dog_together.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>댕댕이유치원</title>
-<link rel="stylesheet" href="../CSS/일정.css">
+<link rel="stylesheet" href="../CSS/calendar.css">
 <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
@@ -17,14 +17,16 @@
 				<div class="right_section">
 					<ul class="lognin_section">
 						<li><a href="sign_in.html">로그인</a></li>
-						<li><a href="sign_up.html"
-						>회원가입하기</a></li>
-					</ul>
+						<li><a href="personal_data.html">회원가입</a></li>
+					</ul>				
 					<ul class="gnb">
 						<li><a href="company_info.html">소개합니다</a></li>
-						<li><a href="reservation.html">예약페이지</a></li>
-						<li><a href="review.html">후기페이지</a></li>
-						<li><a href="javascript:void(0)">문의사항</a></li>		
+						<li><a href="trainer_introduce.html">훈련사소개</a></li>
+						<li><a href="curriculum.html">커리큘럼</a></li>
+						<li><a href="reservation.html">상담신청</a></li>	
+						<li><a href="calendar.html">교육일정</a></li>
+						<li><a href="review.html">교육후기</a></li>
+						<li><a href="way_to_come.html">오시는 길</a></li>						
 					</ul><!--  gnb-->
 				</div><!-- right_section -->			
 			</div><!-- header -->				
@@ -60,7 +62,31 @@
 						<tbody id="tb_body"></tbody>
 					</table>
 				</div>
-				<p>일정 : ㅁㅁㅁ</p>
+				<div style="width: 250px;">
+					<h2 class="calendar_main">- 하반기 일정 -</h2>
+					<p>
+						<div class="calendar_content">
+							<h3>8월 29일</h3>
+							<div>댕댕이 유치원 OT</div>
+						</div>
+						<div class="calendar_content">
+							<h3>8월 30일 ~ 9월 23일</h3>
+							<div>배변교육 훈련</div>
+						</div>
+						<div class="calendar_content">
+							<h3>9월 26일 ~ 10월 21일</h3>
+							<div>문제행동 교정 훈련</div>
+						</div>
+						<div class="calendar_content">
+							<h3>10월 24일 ~ 11월 18일</h3>
+							<div>예절 훈련(정규반)</div>
+						</div>
+						<div class="calendar_content">
+							<h3>11월 21일 ~ 12월 16일</h3>
+							<div>가정 방문 훈련</div>
+						</div>
+					</p>
+				</div>
 			</div>
 		</div>
 			</div>
@@ -84,7 +110,7 @@
 	</div><!-- wrap -->
 	
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-	<script src="../JS/일정.js" type="text/javascript"></script>
+	<script src="../JS/calendar.js" type="text/javascript"></script>
 	
 </body>
 </html>
