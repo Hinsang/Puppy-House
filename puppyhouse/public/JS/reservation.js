@@ -25,8 +25,11 @@
 	*/
 	//보호자이름
 	let input = document.querySelectorAll('.name')
-	//보호자 전화번호
+	//보호자 전화번호ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
 	let phonetitle = document.querySelectorAll('.phone_title').options
+	let front_phone = document.querySelector('.front_phone')
+	let back_phone = document.querySelector('.back_phone')
+	let emil = 
 	console.log(phonetitle)
 	
 }
