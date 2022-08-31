@@ -18,7 +18,7 @@
  function 제출하기(){
 	//보호자 정보
 	//보호자이름
-	let name = document.querySelector('.name')
+	let name = document.querySelector('.name').value
 	console.log(name)
 	//보호자 전화번호
 	//010~~
@@ -39,9 +39,9 @@
 	//견종
 	let dog_breed = document.querySelector('.dog_breed').value	
 	//중성화여부	
-	let neutralization = document.querySelector('input[name="neutralization"]:checked').value;
+	let neutralization = document.querySelector('input[name="neutralization"]:checked').value
 	//문제행동
-	let action = document.querySelectorAll('input[name="action"]:checked');
+	let action = document.querySelectorAll('input[name="action"]:checked')
 	
 	let actionlist = [ ]
 	for( let i = 0 ; i<action.length ; i++ ){
@@ -50,10 +50,10 @@
 	//첨부파일
 	let file = document.querySelector('.file')	
 	//입양출처
-	let adoption = document.querySelector('input[name="adoption"]:checked').value;
+	let adoption = document.querySelector('input[name="adoption"]:checked').value
 	 
 	//주거환경
-	let house = document.querySelector('input[name="house"]:checked').value;
+	let house = document.querySelector('input[name="house"]:checked').value
 	
 	
 	//출력받은 값을 저장하는 리스트	
