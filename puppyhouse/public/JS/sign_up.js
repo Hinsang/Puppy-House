@@ -134,8 +134,7 @@ function submit_info(){
 		btn_p.textContent = '입력 정보를 확인해주세요.'
 		return
 	}
-	
-	 location.href='index.html';
+	 location.href='../HTML/index.html';
 }
 
 
