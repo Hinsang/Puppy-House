@@ -201,7 +201,7 @@ color: #686868;
 .btn_box{display : flex; flex-direction: column; align-items: center;}
 
 #keepgoing{margin-top : 20px;}
-#cancel{margin-top : 20px; ; background-color : white; border: 1px solid black; color : #1c3761}
+#cancel{margin-top : 20px; ; background-color : white; border: 1px solid black; color : #1c3761;}
 
 
 
