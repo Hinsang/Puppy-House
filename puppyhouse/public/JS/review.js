@@ -134,20 +134,20 @@ const post_img = document.querySelector('.post_img')
 
 let point_star = ''
 
-const name_box = [ ]
-/*
-function 리뷰입력(){
-   name_box.push(name.value)
-   console.log(name_box)
-}
-*/
+	// const name_box = [ ]
+	/*
+	function 리뷰입력(){
+	   name_box.push(name.value)
+	   console.log(name_box)
+	}
+	*/
 
 let count = 0
 function 리뷰입력(){
    count++
    console.log(post_img.value)
    
-   name_box.push(name.value)
+   //name_box.push(name.value)
 
    document.getElementById('review_get').innerHTML += 
      
@@ -155,8 +155,8 @@ function 리뷰입력(){
             '<div class="review_text">'+
                '<div class="text_01"><div class="new_box">'+
                   '<div class="new_text"> NEW'+ count +'</div></div>'+
-                  '<div class="get_star">'+point_star+'</div>'+
-                  '<div class="get_name">'+name.value+'</div>'+
+                  '<div class="get_star">'+ point_star +'</div>'+
+                  '<div class="get_name">'+ name.value +'</div>'+
                   '<div class="get_name2">견주님</div>'+
                '</div>'+
                '<div class="get_text">'+ post_text.value +'</div>'+
@@ -164,9 +164,7 @@ function 리뷰입력(){
             '<div class="review_img">'+
                '<div class="get_img"><img src="../images/'+ post_img.value.split('\\')[2] +'"></div>'+
             '</div>'+
-         '</div>'       
-     
-
+         '</div>'
 }
 	
 

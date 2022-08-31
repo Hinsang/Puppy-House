@@ -12,14 +12,13 @@ window.addEventListener('scroll', () => {
 	// 함수 밖에서 선언할 경우 콘솔창에 계속 0으로 떠서 안에서 선언
 		
 			if(Number( dot_bar.style.height.split('p')[0] ) > 2050){
-				
-				dot_bar.style.height=2050
+				//dot_bar가 y축 2050px 지점 이상일 경우 p의 앞자리에 split으로 문자열을 짤라줘서 작동하지않게 하겠다..
+				dot_bar.style.height = 2050 
 				return
 			}
 	
 	console.log( height )
 	// 선언한 변수가 제대로 나오는지 확인
-	
 	
 		function scroll_move(){
 			// 변수 height에 따라 움직일 새로운 함수 선언
@@ -28,7 +27,6 @@ window.addEventListener('scroll', () => {
 			dot_bar.style.height = height + 100 + 'px'
 			// 초기 px 값인 210에서 height를 더한 후 px로 입력
 			// Math.ceil((scroll / scrollable) * 100)
-			
 		}
 		
 		scroll_move()

@@ -36,7 +36,6 @@
 	color:#fff;
 }
 
-.left_section{}
 .logo_section{
 	width: 200px;
 	height: 50px;
@@ -229,7 +228,7 @@ article{
 
 .left_text_box{
 	padding-right: 30px;
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 .left_ct_text_01 {
@@ -547,6 +546,7 @@ article{
 
 /*footer section*/
 .footer_wrap{
+	clear: both;
 	width: 100%;
 	background: #1c3761; 
 	padding:10px 0;
@@ -559,9 +559,4 @@ article{
 	color:#fff;
 	
 }
-.top_footer{
-}
-.top_footer li{}
-.booter_footer{}
-.booter_footer li{}
 
