@@ -34,7 +34,7 @@ a{
 }
 .header{
 	width: 1280px;
-	height: 80px;
+	height: 90px;
     margin: 0 auto;      
     display: flex;
     align-items: center;
@@ -44,12 +44,15 @@ a{
 .header a{
 	color:#fff;
 }
-
 .left_section{}
 .logo_section{
 	width: 200px;
-	height: 50px;
-	background: #ccc;
+	height: 70px;	
+}
+
+.logo_section img{
+	width: auto;
+    height: 100%;
 }
 .right_section{
 	height:90px;
@@ -105,15 +108,14 @@ a{
 }
 /*dot*/
 .dot_wrap{
-  width:300px;
-  margin:0 auto;
-  position: absolute;
-  bottom:30px;
-  left:45%; 
-  display: flex;
-  align-items:center;
-  justify-content:space-around;
-  transform: translatey(50%);
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    left: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .dot {

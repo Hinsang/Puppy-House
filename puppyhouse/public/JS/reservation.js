@@ -18,13 +18,18 @@
  function 제출하기(){
 	//보호자 정보
 	//보호자이름
-	let name = document.querySelectorAll('.name')
+	let name = document.querySelector('.name')
+	console.log(name)
 	//보호자 전화번호
+	//010~~
 	let phone_title = document.querySelector('.phone_title').value	
+	//앞번호
 	let front_phone = document.querySelector('.front_phone').value	
+	//뒷번호
 	let back_phone = document.querySelector('.back_phone').value	
 	//보호자이메일
 	let email = document.querySelector('.email').value	
+	//@
 	let email_select = document.querySelector('.email_select').value	
 	//반려견정보
 	//이름
@@ -33,45 +38,37 @@
 	let dogage = document.querySelector('.dogage').value	
 	//견종
 	let dog_breed = document.querySelector('.dog_breed').value	
-	//중성화여부
-	let neutralization = document.querySelector('.neutralization_box').value	
+	//중성화여부	
+	let neutralization = document.querySelector('input[name="neutralization"]:checked').value;
 	//문제행동
-	let action = document.getElementsByName('action')	//첨부파일
+	let action = document.querySelectorAll('input[name="action"]:checked');
 	
+	let actionlist = [ ]
+	for( let i = 0 ; i<action.length ; i++ ){
+		actionlist.push( action[i].value ) 
+	}	
+	//첨부파일
 	let file = document.querySelector('.file')	
 	//입양출처
-	let adoption = document.querySelector('.adoption_box').value	
+	let adoption = document.querySelector('input[name="adoption"]:checked').value;
+	 
 	//주거환경
-	let house = document.querySelector('.house_box').value	
-	
-	//action for문
-	for(let i=0,max=action.lehgth;i<max;i++){
-		if(action[i].checked)
-		console.log(action[i].value)
-	}	
+	let house = document.querySelector('input[name="house"]:checked').value;
 	
 	
-	
-		
-
-	
-	
-	
-	
-	
-
+	//출력받은 값을 저장하는 리스트	
 	let 상담신청완료리스트 ={
-	보호자이름 : name,	
+	보호자이름 : name,	//
 	전화번호 : phone_title +'-'+ front_phone +'-'+ back_phone,
 	이메일 : email + '@'+ email_select,
 	반려견이름 : dogname,
 	반려견나이 : dogage,
 	견종 : dog_breed,
-	중성화여부 : neutralization,
-	문제행동 : action,
+	중성화여부 : neutralization,//
+	문제행동 : actionlist,//
 	첨부파일 : file,
-	입양출처 : adoption,
-	주거환경 : house			
+	입양출처 : adoption,//
+	주거환경 : house		//	
 	}
 	console.log(상담신청완료리스트)
 	
