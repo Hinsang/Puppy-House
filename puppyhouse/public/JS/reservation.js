@@ -14,24 +14,70 @@
  let 신청자리스트 =[]
  //상담리스트
  //함수
+ 제출하기()
  function 제출하기(){
-	/*
-	let name = document.querySelector('.name')
-	let phone1 = document.querySelector('.phone_title')
-	let phone2 = document.querySelector('.front_phone')
-	let phone3 = document.querySelector('.back_phone')
-	let email = document.querySelector('.email')	
-	console.log(email_select)	
-	*/
+	//보호자 정보
 	//보호자이름
-	let input = document.querySelectorAll('.name')
-	//보호자 전화번호ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
-	let phonetitle = document.querySelectorAll('.phone_title').options
-	let front_phone = document.querySelector('.front_phone')
-	let back_phone = document.querySelector('.back_phone')
-	let emil = 
-	console.log(phonetitle)
+	let name = document.querySelectorAll('.name')
+	//보호자 전화번호
+	let phone_title = document.querySelector('.phone_title').value	
+	let front_phone = document.querySelector('.front_phone').value	
+	let back_phone = document.querySelector('.back_phone').value	
+	//보호자이메일
+	let email = document.querySelector('.email').value	
+	let email_select = document.querySelector('.email_select').value	
+	//반려견정보
+	//이름
+	let dogname= document.querySelector('.dogname').value	
+	//나이
+	let dogage = document.querySelector('.dogage').value	
+	//견종
+	let dog_breed = document.querySelector('.dog_breed').value	
+	//중성화여부
+	let neutralization = document.querySelector('.neutralization_box').value	
+	//문제행동
+	let action = document.getElementsByName('action')	//첨부파일
 	
-}
+	let file = document.querySelector('.file')	
+	//입양출처
+	let adoption = document.querySelector('.adoption_box').value	
+	//주거환경
+	let house = document.querySelector('.house_box').value	
+	
+	//action for문
+	for(let i=0,max=action.lehgth;i<max;i++){
+		if(action[i].checked)
+		console.log(action[i].value)
+	}	
+	
+	
+	
+		
 
-제출하기()
+	
+	
+	
+	
+	
+
+	let 상담신청완료리스트 ={
+	보호자이름 : name,	
+	전화번호 : phone_title +'-'+ front_phone +'-'+ back_phone,
+	이메일 : email + '@'+ email_select,
+	반려견이름 : dogname,
+	반려견나이 : dogage,
+	견종 : dog_breed,
+	중성화여부 : neutralization,
+	문제행동 : action,
+	첨부파일 : file,
+	입양출처 : adoption,
+	주거환경 : house			
+	}
+	console.log(상담신청완료리스트)
+	
+}//function
+
+
+
+
+
