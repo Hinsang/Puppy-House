@@ -22,8 +22,9 @@
 						<li><a href="trainer_introduce.html">훈련사소개</a></li>
 						<li><a href="수강커리큘럼.html">커리큘럼</a></li>
 						<li><a href="reservation.html">상담신청</a></li>	
-						<li><a href="javascript:void(0)">교육일정</a></li>
-						<li><a href="review.html">교육후기</a></li>							
+						<li><a href="calendar.html">교육일정</a></li>
+						<li><a href="review.html">교육후기</a></li>
+						<li><a href="way_to_come.html">오시는길</a></li>							
 					</ul><!--  gnb-->
 				</div><!-- right_section -->			
 			</div><!-- header -->				
@@ -56,12 +57,12 @@
 							<span class="span_text">전화번호</span>
 							<div class="input_box phone_box">
 								<select class="phone_title">
-									<option>010</option>
-									<option>011</option>
-									<option>016</option>
-									<option>017</option>
-									<option>018</option>
-									<option>019</option>
+									<option class="phone_options" value="010">010</option>
+									<option class="phone_options" value="011">011</option>
+									<option class="phone_options" value="016">016</option>
+									<option class="phone_options" value="017">017</option>
+									<option class="phone_options" value="018">018</option>
+									<option class="phone_options" value="019">019</option>
 								</select> 
 								<span class="sign">-</span>
 								<input type="text" placeholder=""  class="input front_phone"> 
@@ -76,11 +77,11 @@
 								<input type="email"  class="input email">
 								<span class="sign">@</span>
 								<select class="email_select">
-									<option>naver.com</option>
-									<option>nate.com</option>
-									<option>daum.net</option>
-									<option>gmail.com</option>
-									<option>직접입력</option>								
+									<option class="email_options" value="naver.com">naver.com</option>
+									<option class="email_options" value="nate.com">nate.com</option>
+									<option class="email_options" value="daum.net">daum.net</option>
+									<option class="email_options" value="gmail.com">gmail.com</option>
+									<option class="email_options" value="직접입력">직접입력</option>								
 								</select>
 							</div><!-- input_box -->						
 						</div><!-- input_div -->					
@@ -111,26 +112,52 @@
 						
 						<div class="input_div dog_neutralization_section">
 							<span class="span_text">중성화 여부</span>
-							<div class="input_box">
-								<input type="radio" name="neutralization" class="radio neutralization">예
-								<input type="radio" name="neutralization" class="radio neutralization">아니오
-								<input type="radio" name="neutralization" class="radio neutralization">모르겠음
+							<div class="input_box neutralization_box">
+								<label>								
+									<input type="radio" name="neutralization" class="radio neutralization" value="예">예
+								</label>
+								<label>
+									<input type="radio" name="neutralization" class="radio neutralization" value="아니오">아니오
+								</label>
+								<label>
+									<input type="radio" name="neutralization" class="radio neutralization" value="모르겠음">모르겠음
+								</label>
 							</div><!-- input_box -->						
 						</div><!-- input_div -->					
 						
 						<div class="input_div dog_action_section">
 							<span class="span_text">문제행동<br> (해당되는 행동을 모두 골라주세요.)</span>
-							<div class="input_box action_section">
-								<input type="checkbox" name="action" class="checkbox action">분리불안
-								<input type="checkbox" name="action" class="checkbox action">트라우마
-								<input type="checkbox" name="action" class="checkbox action">사회성
-								<input type="checkbox" name="action" class="checkbox action">무는행동
-								<input type="checkbox" name="action" class="checkbox action">공격적인 행동<br>
-								<input type="checkbox" name="action" class="checkbox action">짖음/낑낑거림
-								<input type="checkbox" name="action" class="checkbox action">물건파괴/물건씹음
-								<input type="checkbox" name="action" class="checkbox action">배변
-								<input type="checkbox" name="action" class="checkbox action">사료거부
-								<input type="checkbox" name="action" class="checkbox action">기타등등
+							<div class="input_box action_section" id="id_action">
+								<label class="action_label">
+									<input type="checkbox" name="action" class="checkbox action" value="분리불안">분리불안
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="트라우마">트라우마
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="사회성">사회성
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="무는행동">무는행동
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="공격적인 행동">공격적인 행동<br>
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="짖음/낑낑거림">짖음/낑낑거림
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="물건파괴/물건씹음">물건파괴/물건씹음
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="배변">배변
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="사료거부">사료거부
+								</label>
+								<label>
+									<input type="checkbox" name="action" class="checkbox action" value="기타등등">기타등등
+								</label>
 							</div><!-- input_box -->						
 						</div><!-- input_div -->
 						
@@ -147,21 +174,35 @@
 						
 						<div class="input_div dog_adoption_section">
 							<span class="span_text">반려견의 입양출처</span>
-							<div class="input_box">
-								<input type="radio" name="adoption" class="radio adoption">펫샵 
-								<input type="radio" name="adoption" class="radio adoption">지인
-								<input type="radio" name="adoption" class="radio adoption">유기견센터
-								<input type="radio" name="adoption" class="radio adoption">기타					
+							<div class="input_box adoption_box">
+								<label>
+									<input type="radio" name="adoption" class="radio adoption" value="펫샵">펫샵 
+								</label>
+								<label>
+									<input type="radio" name="adoption" class="radio adoption" value="지인">지인
+								</label>
+								<label>
+									<input type="radio" name="adoption" class="radio adoption" value="유기견센터">유기견센터
+								</label>
+								<label>
+									<input type="radio" name="adoption" class="radio adoption" value="기타">기타					
+								</label>
 							</div><!-- input_box -->					
 						</div><!-- input_div -->	
 						
 						
 						<div class="input_div dog_house_section">
 							<span class="span_text">반려견의 주거환경</span>
-							<div class="input_box">
-								<input type="radio" name="house" class="radio house">단독주택 
-								<input type="radio" name="house" class="radio house">다세대주택
-								<input type="radio" name="house" class="radio house">기타												
+							<div class="input_box house_box">
+								<label>
+									<input type="radio" name="house" class="radio house" value="단독주택">단독주택 
+								</label>
+								<label>
+									<input type="radio" name="house" class="radio house" value="다세대주택">다세대주택
+								</label>
+								<label>
+									<input type="radio" name="house" class="radio house" value="기타">기타												
+								</label>
 							</div><!-- input_box -->					
 						</div><!-- input_div -->	
 																
