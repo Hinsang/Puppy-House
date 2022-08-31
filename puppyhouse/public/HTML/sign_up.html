@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>댕댕이유치원</title>
+<link rel="stylesheet" href="../CSS/sign_up.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header_wrap">
+			<div class="header">
+				<div class="left_section">
+					<div class="logo_section">
+	               		<a href="index.html">
+	              			<img src="../images/logo.png" alt="logo">
+	              		</a>
+               		</div><!-- logo_section -->
+				</div><!-- left_section -->
+				<div class="right_section">
+					<ul class="lognin_section">
+						<li><a href="sign_in.html">로그인</a></li>
+						<li><a href="personal_data.html">회원가입</a></li>
+					</ul>				
+					<ul class="gnb">
+						<li><a href="company_info.html">소개합니다</a></li>
+						<li><a href="trainer_introduce.html">훈련사소개</a></li>
+						<li><a href="curriculum.html">커리큘럼</a></li>
+						<li><a href="reservation.html">상담신청</a></li>	
+						<li><a href="calendar.html">교육일정</a></li>
+						<li><a href="review.html">교육후기</a></li>
+						<li><a href="way_to_come.html">오시는길</a></li>						
+					</ul><!--  gnb-->
+				</div><!-- right_section -->			
+			</div><!-- header -->				
+		</div><!-- header_wrap -->
+		
+		<div class="contaeinr">
+			<div class="contaeinr_img_section"><!-- header바로 밑에 들어가는 img secgion -->
+	
+			</div><!-- contaeinr_img_section -->
+			
+		
+			<div class="text_section">
+				<h3 class="cs_title">회원가입</h3>
+				<p class="cs_sub_text">SIGN UP</p>			
+			</div><!-- text_section -->
+			<div class="main_wrap">
+
+				<div class="id_box">
+					<div>
+						<h3>아이디</h3>
+						<input id="id_input" type="text">
+						<p id="idp"></p>
+					</div>
+					<div>
+						<h3>비밀번호</h3>
+						<input id="pw_input" type="password">
+						<p id="pwp"></p>
+					</div>
+					<div>
+						<h3>비밀번호 확인</h3>
+						<input id="repeatPw" type="password">
+						<p id="pwtp"></p>
+					</div>				
+				</div>
+				<div class="info_box">
+					<div>
+						<h3>이름</h3>
+						<input id="name_input" type="text">
+					</div>
+					<div id="birth_box">
+						<h3>생년월일</h3>
+						<div id="birth_input">
+							<input type="text" placeholder="년(4자)">
+							<select>
+								<option>선택</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+							</select>	
+							<input type="text" placeholder="일">	
+						</div>			
+					</div>
+					<div class="sexuality">
+						<h3>성별</h3>
+						<select>
+							<option>선택안함</option>
+							<option>남자</option>
+							<option>여자</option>
+						</select>
+					</div>
+					<div>
+						<h3>이메일</h3>
+						<input id="email_input" type="email">
+						<p id="email_output"></p>
+					</div>
+				</div>
+				<div class="btn_box">
+					<button onclick="submit_info()" id="lastbtn"><span>회원가입</span></button>
+					<p id="btn_p"></p>
+				</div>
+			</div>			
+		</div><!-- contaeinr -->
+		
+		<div class="footer_wrap">		
+			<div class="footer">
+				<ul class="top_footer">
+					<li>BMSMILE Co., Ltd.</li>
+					<li>Tel.1644-9603 |</li>
+					<li>Email : contact@bmsmile.com |</li> 
+				</ul><!-- top_footer -->
+				<ul class="booter_footer">
+					<li>E-Commerce Registration : 2020-Seoul Gangnam-01687</li>
+					<li>Address : 4th floor, 8, Teheran-ro 44-gil, Gangnam-gu, Seoul, Republic of Korea |</li> 
+					<li>CEO : Bongsu ParkㅣPersonal Info Manager : Dongwook Lee |</li> 
+				
+				</ul><!-- booter_footer -->		
+			</div><!-- footer -->
+		</div><!-- footer_wrap -->		
+	</div><!-- wrap -->
+	
+	
+	
+	<script src="../JS/sign_up.js"></script>
+</body>
+</html>
