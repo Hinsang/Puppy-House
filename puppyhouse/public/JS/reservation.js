@@ -19,7 +19,7 @@
 	//보호자 정보
 	//보호자이름
 	let name = document.querySelector('.name').value
-	console.log(name)
+	//console.log(name)
 	//보호자 전화번호
 	//010~~
 	let phone_title = document.querySelector('.phone_title').value	
@@ -42,7 +42,7 @@
 	let neutralization = document.querySelector('input[name="neutralization"]:checked').value
 	//문제행동
 	let action = document.querySelectorAll('input[name="action"]:checked')
-	
+	//중복 선택이 가능한checkbox에 있는 값을 가져오는 script
 	let actionlist = [ ]
 	for( let i = 0 ; i<action.length ; i++ ){
 		actionlist.push( action[i].value ) 
